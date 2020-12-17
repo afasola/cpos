@@ -1,3 +1,7 @@
 This project is inspired by https://os.phil-opp.com/freestanding-rust-binary/
 
-To test: ./build/qemu-system-x86_64 -drive format=raw,file=../cpos/target/x86_64-cpos/debug/bootimage-cpos.bin
+Test execution relies on QEMU (https://www.qemu.org)
+
+Ensure QEMU is installed and `qemu-system-x86_64` is in the path.
+
+To test: qemu-system-x86_64 -drive format=raw,file=./target/x86_64-cpos/debug/bootimage-cpos.bin
